@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "777014592002",
+    "firebase_url": "https://instabot-with-urban-airship.firebaseio.com",
+    "project_id": "instabot-with-urban-airship",
+    "storage_bucket": "instabot-with-urban-airship.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:777014592002:android:a29eb324c42e56a9",
+        "android_client_info": {
+          "package_name": "com.chartiq.sampleapp.instabot_with_thirdparty_push_provider"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "777014592002-45hg2ioqvatkpr95e45m6b60tr8jmkst.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA0vZWxXJRHit9CEk6QEUsNawedrNA-tYQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.chartiq.sampleapp.instabot_with_thirdparty_push_provider">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/roko_mobi_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/roko_mobi_logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <receiver android:name=".SampleAirshipReceiver"
+            android:exported="false">
+
+            <intent-filter>
+                <action android:name="com.urbanairship.push.CHANNEL_UPDATED" />
+                <action android:name="com.urbanairship.push.OPENED" />
+                <action android:name="com.urbanairship.push.RECEIVED" />
+                <action android:name="com.urbanairship.push.DISMISSED" />
+                <category android:name="${applicationId}" />
+            </intent-filter>
+        </receiver>
+
+
+        <!-- https://docs.roko.mobi/docs/android-integrate-sdk#section-2-add-your-roko-mobi-api-key -->
+        <meta-data
+            android:name="ROKOMobiAPIToken"
+            android:value="REPLACE_WITH_YOUR_OWN" />
+
+    </application>
+
+
+
+</manifest>
